@@ -1,0 +1,71 @@
+1. 
+javac helloworld.java
+java helloworld
+
+2. 
+true
+false
+false 
+true
+false
+
+3.
+2bc
+25bc
+5bc
+bc5
+bc25
+
+4.
+The progaram will crash
+
+5.
+There will be a compiler error
+
+6.
+There will be a compiler error
+
+7.
+you forgot to put String[] args, in the main method.
+
+8.
+3.3333333333333335
+3.3333333333333335
+3.3333333333333335
+3
+
+9.
+public class Test {
+  public static void main(String[] arg) {
+    System.out.println("Hello, my name is Omar");
+  }
+}
+
+10.
+public class DataTypes {
+ public static void main(String[] args){
+   byte a = 68;
+   short s = 10,000;
+   int a = 2,147,483,647;
+   long ln = 9,223,372,036,854,775,807;
+   float f1 = 234.5f;
+   double d1 = 123.4;
+   boolean one = true;
+   char a = A;
+  }
+}
+
+
+11. 
+public class Operators {
+  public static void main(String[] args) {
+    boolean is5GreaterThan5 = 5 > 5;
+    boolean is5LessThan5 = 5 < 5;
+    boolean is5LessThanorEqualto5 = 5 <= 5;
+    
+
+    System.out.println("Is 5 greater than 5? " + is5GreaterThan5)
+    System.out.println("Is 5 less than 5? " + is5LessThan5);
+    System.out.println("Is 5 less or equal to 5? " + is5LessThanorEqualto5);
+  }
+}
