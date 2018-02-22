@@ -11,11 +11,13 @@ import models.ShotModel;
 public class GameEngine {
     private GravityEngine gravityEngine = new GravityEngine();
     private MovementEngine movementEngine = new MovementEngine();
+    private CollisionEngine collisonEngine = new CollisionEngine();
 
     public void updateState(GameModel state, String input) {
         gravityEngine.updateState(state);
         updateFromUserInput(state, input);
         movementEngine.updateState(state);
+        CollisionEngine.updateState(state);
     }
 
     private void updateFromUserInput(GameModel state, String input) {
