@@ -24,6 +24,7 @@ public class Pomeranian extends Dog{
   public static void main(String args[]){
     Pomeranian Max = new Pomeranian("Max");
     System.out.println("Name: " + Max.getName());
+    System.out.println("Type: " + rex.getType());
     System.out.println("Sound: " +Max.getSound());
     System.out.println("Weight: "+Max.getWeight());
     System.out.println("Color: "+Max.getColor());

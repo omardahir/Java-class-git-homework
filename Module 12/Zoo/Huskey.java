@@ -24,6 +24,7 @@ public class Huskey extends Dog{
   public static void main(String args[]){
     Huskey Snow = new Huskey("Snow");
     System.out.println("Name: " + Snow.getName());
+    System.out.println("Type: " + rex.getType());
     System.out.println("Sound: " +Snow.getSound());
     System.out.println("Weight: "+Snow.getWeight());
     System.out.println("Color: "+Snow.getColor());
