@@ -8,14 +8,15 @@ public class Canvas extends Component {
     super();
     this.shapes = getShapes();
   }
-  
+
   public java.util.List<CanvasShape> getShapes() {
     java.util.List<CanvasShape> s = new java.util.ArrayList<CanvasShape>();
-    
+
     // TODO: add your shapes here!
     s.add(new Circle(100, 100, 200, 200));
     s.add(new Triangle(100, 300, 200, 200));
-    
+    s.add(new Square(300, 300, 200, 200));
+    s.add(new Diamond(300, 100, 200, 200));
     return s;
   }
 
@@ -24,10 +25,10 @@ public class Canvas extends Component {
     super.paint(g);
     Graphics2D graphics = (Graphics2D) g;
     Dimension canvasSize = getSize();
-    
+
     g.setColor(Color.BLACK);
     graphics.fillRect(0, 0, canvasSize.width, canvasSize.height);
-    
+
     for (CanvasShape shape : shapes) {
       shape.render(graphics);
     }
